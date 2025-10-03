@@ -1,2 +1,2 @@
-# Llama-Space-DeviantArt
-Taken from Deactivated Account page and now open source.
+# Llama Space DeviantArt
+A existing page from DeviantArt when you access a Deactivated Account and this is open source.
