@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta http-equiv="x-dns-prefetch-control" content="off"/>
+        <meta name="copyright" content="2025 DeviantArt"/>
+        <meta name="title" content="Llama Space"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>DeviantArt: Llama Space</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://st.deviantart.net/minish/touch-icons/ios-180.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="https://st.deviantart.net/minish/touch-icons/ios-152.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="https://st.deviantart.net/minish/touch-icons/ios-120.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="https://st.deviantart.net/minish/touch-icons/ios-76.png"/>
+        <link rel="icon" sizes="192x192" href="https://st.deviantart.net/minish/touch-icons/android-192.png"/>
+        <link rel="icon" sizes="144x144" href="https://st.deviantart.net/minish/touch-icons/android-144.png"/>
+        <link rel="icon" sizes="96x96" href="https://st.deviantart.net/minish/touch-icons/android-96.png"/>
+        <link rel="icon" sizes="48x48" href="https://st.deviantart.net/minish/touch-icons/android-48.png"/>
+        <link rel="mask-icon" href="https://st.deviantart.net/eclipse/icons/touchbar-mark-v2.svg" color="#00e59b"/>
+        <link href="https://i.deviantart.net/icons/da_favicon_staging_v2.ico" rel="shortcut icon"/>
+        <meta name="application-name" content="DeviantArt"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.deviantart.com/"/>
+        <meta property="og:image" content="https://st.deviantart.net/minish/main/logo/card_black_large.png"/>
+        <meta property="og:description" content="DeviantArt is the world's largest online social community for artists and art enthusiasts, allowing people to connect through the creation and sharing of art."/>
+        <link href="https://s.deviantart.com/icons/da_favicon.ico" rel="icon"/>
+        <link href="https://s.deviantart.com/minish/widgets/apple-touch-icon-lg.png" rel="apple-touch-icon"/>
+        <style>
+            @font-face {
+                font-family: 'devioussans02bold';
+                src: url('https://st.deviantart.net/fonts/deviantart/experimental/devioussans-02-bold.woff2') format('woff2'), url('https://st.deviantart.net/fonts/deviantart/experimental/devioussans-02-bold.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'devioussans02extrabold';
+                src: url('https://st.deviantart.net/fonts/deviantart/experimental/devioussans-02-extrabold.woff2') format('woff2'), url('https://st.deviantart.net/fonts/deviantart/experimental/devioussans-02-extrabold.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'devioussans02light';
+                src: url('https://st.deviantart.net/fonts/deviantart/experimental/devioussans-02-light.woff2') format('woff2'), url('https://st.deviantart.net/fonts/deviantart/experimental/devioussans-02-light.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            a {
+                color: #fff;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+
+            a:hover {
+                color: #00c787;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-color: #0b0c12;
+                padding: 0;
+                margin: 0;
+            }
+
+            .headline {
+                font-family: devioussans02extrabold, sans-serif;
+                font-size: 64px;
+                font-weight: 800;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.3px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 0px;
+                margin-top: 60px;
+            }
+
+            .message {
+                font-family: devioussans02, sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 32px;
+                letter-spacing: 0.5px;
+                color: #fff;
+                text-align: center;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .logo {
+                width: 160px;
+                margin: 36px 0 0 60px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .solid-button {
+                box-sizing: border-box;
+                box-shadow: none;
+                border: none;
+                border-radius: 4px;
+                color: #06070d;
+                background: #00e59b;
+                font-family: devioussans02bold, sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: none;
+                white-space: nowrap;
+                text-decoration: none;
+                display: inline-flex;
+                text-align: center;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: center;
+                padding: 16px 40px;
+                margin-top: 16px;
+            }
+
+            .solid-button:hover {
+                color: #06070d;
+                background: #00e59b;
+            }
+
+            .content-wrapper {
+                position: absolute;
+                left: 0;
+                top: 24px;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #stage {
+                touch-action: none;
+                background: black;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+                background-image: url(https://st.deviantart.net/artbit/topsecret/error/bg.png?2);
+                background-position: left top;
+                background-size: contain;
+                background-repeat: repeat-x;
+                position: absolute;
+                width: 100%;
+                height: auto;
+            }
+
+            .hide {
+                display: none;
+            }
+
+            .content-wrapper {
+                pointer-events: none;
+            }
+
+            a {
+                pointer-events: all;
+            }
+
+            @media only screen and (max-width: 800px) {
+                .logo {
+                    margin: 24px 0 0 24px;
+                    width: 120px;
+                    display: block;
+                }
+
+                .headline {
+                    margin-top: 156px;
+                    font-size: 48px;
+                }
+
+                .message {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                .solid-button {
+                    padding: 12px 32px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        </style>
+        <style>
+            body {
+                background: url('https://st.deviantart.net/eclipse/error-pages/p17b.jpg');
+            }
+        </style>
+    </head>
+    <body class="error-deactivated">
+        <canvas id="stage" width="860" height="540"></canvas>
+        <div class="content-wrapper">
+			<!--
+            <a href="https://www.deviantart.com">
+			<!-->
+                <img src="https://st.deviantart.net/eclipse/error-pages/p-01-da-logo-white.svg?1" class="logo"/>
+            </a>
+            <h1 class="headline">Llama Space</h1>
+            <p class="message">
+                Nice luck on space. 
+      
+            </p>
+            <a href="https://www.deviantart.com" class="solid-button show">Browse Art</a>
+        </div>
+        <script nonce="f1b7f4348a13d2eacbc0c493e3e8b668" type="text/javascript">
+            ( () => {
+                function g(i, t, e) {
+                    t.split(" ").forEach(s => i.addEventListener(s, e))
+                }
+                function K(i, t) {
+                    let e = i.getBoundingClientRect()
+                      , s = (t.clientX - e.left) / (e.right - e.left) * i.width
+                      , o = (t.clientY - e.top) / (e.bottom - e.top) * i.height;
+                    return {
+                        x: s,
+                        y: o
+                    }
+                }
+                var V = class {
+                    constructor(t) {
+                        this.canvas = t,
+                        this.ctx = t.getContext("2d"),
+                        this.width = t.width,
+                        this.height = t.height,
+                        this.filters = []
+                    }
+                    clear() {
+                        this.ctx.clearRect(0, 0, this.width, this.height)
+                    }
+                    fill(t) {
+                        this.ctx.fillStyle = t,
+                        this.ctx.fillRect(0, 0, this.width, this.height)
+                    }
+                    drawText(t) {
+                        drawText(this.ctx, t)
+                    }
+                    drawImage(t, e, s, o, a) {
+                        this.ctx.drawImage(t, e, s, o, a)
+                    }
+                    drawSystem(t) {
+                        t.draw(this.ctx)
+                    }
+                    addFilter(t) {
+                        this.filters.push(t)
+                    }
+                    applyFilters() {
+                        this.filters.forEach(t => t.apply(this.ctx))
+                    }
+                    getImageData() {
+                        return this.ctx.getImageData(0, 0, this.width, this.height)
+                    }
+                }
+                  , Z = V;
+                var A = class extends Z {
+                    constructor(t, e) {
+                        if (window.OffscreenCanvas) {
+                            super(new OffscreenCanvas(t,e));
+                            return
+                        }
+                        let s = document.createElement("canvas");
+                        s.width = t,
+                        s.height = e,
+                        super(s)
+                    }
+                }
+                  , $ = A;
+                function c(i, t) {
+                    return Math.random() * (t - i) + i
+                }
+                function tt(i) {
+                    return i[Math.floor(c(0, i.length))]
+                }
+                function y(i, t) {
+                    return Math.round(i / t) * t
+                }
+                function et(i, t, e) {
+                    let s = t - i;
+                    for (; s > Math.PI; )
+                        s -= Math.PI * 2;
+                    for (; s < -Math.PI; )
+                        s += Math.PI * 2;
+                    return i + s * e
+                }
+                function st(i, t, e) {
+                    return i < t ? t : i >= e ? e : i
+                }
+                function S(i, t, e) {
+                    let s = e - t
+                      , o = i - t;
+                    return o >= 0 ? o % s + t : s + o % s + t
+                }
+                function L({x: i, y: t}) {
+                    let e = Math.sqrt(i * i + t * t);
+                    return {
+                        x: i / e,
+                        y: t / e
+                    }
+                }
+                function it(i, t, e, s) {
+                    return t + (e - t) * i(s)
+                }
+                function d(i=2) {
+                    return function(t) {
+                        return Math.pow(t, i)
+                    }
+                }
+                function x(i=2) {
+                    return function(t) {
+                        return 1 - Math.pow(1 - t, i)
+                    }
+                }
+                function E(i=2) {
+                    return Et(d(i), x(i))
+                }
+                function ot(i) {
+                    return function(t) {
+                        return 1 - i(1 - t)
+                    }
+                }
+                function T(i) {
+                    return Math.sin(i * Math.PI / 2)
+                }
+                function Et(...i) {
+                    return function(t) {
+                        let e = 1 / i.length
+                          , s = Math.min(i.length - 1, Math.floor(t / e))
+                          , o = (t - s * e) / e;
+                        return i[s](o)
+                    }
+                }
+                var O = {
+                    easeLinear: i => i,
+                    easeOutQuadratic: x(2),
+                    easeOutCubic: x(3),
+                    easeOutQuartic: x(4),
+                    easeOutQuintic: x(5),
+                    easeInQuadratic: d(2),
+                    easeInCubic: d(3),
+                    easeInQuartic: d(4),
+                    easeInQuintic: d(5),
+                    easeInOutQuadratic: E(2),
+                    easeInOutCubic: E(3),
+                    easeInOutQuartic: E(4),
+                    easeInOutQuintic: E(5),
+                    sineIn: T,
+                    sineOut: ot(T),
+                    trailVelocity: ot(d(3)),
+                    explosion: T
+                }
+                  , at = (i, t, e, s) => typeof i < "u" && i in O ? it(O[i], t, e, s) : it(O.easeLinear, t, e, s);
+                var P = class {
+                    constructor(t, e, s, o, a, n, r, h={}) {
+                        this.easeConfig = h,
+                        this.system = t,
+                        this.x = e,
+                        this.y = s,
+                        this.radius = o,
+                        this.color = a,
+                        this.velocity = n,
+                        this.lifeStart = r,
+                        this.life = r,
+                        this.alpha = 1,
+                        console.stat("particleLife", r)
+                    }
+                    ease(t, e, s, o) {
+                        return at(this.easeConfig?.[t], e, s, o)
+                    }
+                    draw(t) {
+                        let e = this.system.game.config
+                          , s = this.life / this.lifeStart
+                          , o = 1 - s;
+                        t.save(),
+                        t.globalAlpha = this.alpha * s,
+                        t.beginPath();
+                        let a = Math.ceil(e.pixelScale * e.stageScale)
+                          , n = this.ease("scale", 0, this.radius, s) * this.system.game.config.stageScale;
+                        e.debug ? (t.fillStyle = "red",
+                        t.fillRect(this.x, this.y, 1, 1)) : e.shadowBlur ? (t.shadowOffsetX = t.shadowOffsetY = 3e3,
+                        t.fillStyle = this.color,
+                        t.shadowColor = this.color,
+                        t.shadowBlur = this.ease("blur", 0, e.shadowBlur, s),
+                        t.fillRect(y(this.x - 3e3, a), y(this.y - 3e3, a), n, n)) : (t.fillStyle = this.color,
+                        t.shadowColor = this.color,
+                        t.fillRect(y(this.x, a), y(this.y, a), n, n)),
+                        t.restore()
+                    }
+                    update(t) {
+                        let s = this.system.game.config
+                          , o = this.life / this.lifeStart;
+                        if (this.x += (this.ease("velocity", 0, this.velocity.x, o) + s.screenSpeed.x * s.screenSpeedMagnitude * 1) * t,
+                        this.y += (this.ease("velocity", 0, this.velocity.y, o) + s.screenSpeed.y * s.screenSpeedMagnitude * 1) * t,
+                        s.mouseEffectStrength > 0) {
+                            let a = this.system.game.mouse
+                              , n = a.position.x - this.x
+                              , r = a.position.y - this.y
+                              , h = Math.sqrt(n * n + r * r);
+                            if (h < s.mouseEffectRadiusEnd && h > s.mouseEffectRadiusStart) {
+                                let l = 1 - h / s.mouseEffectRadiusEnd
+                                  , p = l * l * s.mouseEffectStrength;
+                                this.velocity.x += a.dx * p * .3,
+                                this.velocity.y += a.dy * p * .3
+                            }
+                        }
+                        this.life -= 1
+                    }
+                    alive() {
+                        return this.life > 0
+                    }
+                }
+                  , F = class {
+                    constructor(t, e={}) {
+                        this.game = t,
+                        this.game.entities.add(this),
+                        this.config = {
+                            ...e
+                        },
+                        this.particles = []
+                    }
+                    add(t) {
+                        console.stat("particles", this.particles.length),
+                        !(this.particles.length > 5e3) && this.particles.push(t)
+                    }
+                    update(t) {
+                        this.particles.forEach(e => e.update(t)),
+                        this.particles = this.particles.filter(e => e.alive())
+                    }
+                    draw(t) {
+                        (!this.tempCanvas || this.tempCanvas.width != t.canvas.width || this.tempCanvas.height != t.canvas.height) && (this.tempCanvas = new $(t.canvas.width,t.canvas.height)),
+                        this.tempCanvas.clear(),
+                        this.particles.forEach(e => e.draw(this.tempCanvas.ctx)),
+                        t.drawImage(this.tempCanvas.canvas, 0, 0)
+                    }
+                    emit(t, e, s, o={}) {
+                        o = {
+                            ...this.game.config,
+                            ...this.config,
+                            ...o
+                        };
+                        let a = [];
+                        for (let n = 0; n < t; n++) {
+                            let r = c(o.minRadius * o.pixelScale, o.maxRadius * o.pixelScale)
+                              , h = o.color
+                              , l = o.velocity || {
+                                x: c(o.minVelocity, o.maxVelocity),
+                                y: c(o.minVelocity, o.maxVelocity)
+                            }
+                              , p = c(o.minLife, o.maxLife);
+                            this.add(new P(this,e,s,r,h,l,p,o.ease))
+                        }
+                        this.particles.push(...a)
+                    }
+                }
+                  , nt = F;
+                var B = class {
+                    constructor(t) {
+                        this.game = t
+                    }
+                    update(t) {
+                        if (!this.position) {
+                            this.position = {
+                                ...this.game.mouse.position
+                            },
+                            this.target = {
+                                ...this.position
+                            };
+                            return
+                        }
+                        let e = 50
+                          , s = this.game.config.pixelScale;
+                        for (; this.distance() > s && e > 0; )
+                            this.step(),
+                            e--
+                    }
+                    distance() {
+                        let t = this.game.mouse.position.x - this.position.x
+                          , e = this.game.mouse.position.y - this.position.y;
+                        return Math.sqrt(t * t + e * e)
+                    }
+                    step() {
+                        let t = this.game.config.trailEase
+                          , e = (this.game.mouse.position.x - this.target.x) * t
+                          , s = (this.game.mouse.position.y - this.target.y) * t;
+                        this.target.x += e,
+                        this.target.y += s;
+                        let o = (this.target.x - this.position.x) * t
+                          , a = (this.target.y - this.position.y) * t
+                          , n = Math.sqrt(o * o + a * a)
+                          , r = L({
+                            x: o,
+                            y: a
+                        });
+                        this.position.x += o,
+                        this.position.y += a;
+                        let h = {
+                            x: -a,
+                            y: o
+                        }
+                          , l = L(h)
+                          , p = this.game.config.colors
+                          , Y = this.game.config.pixelScale * this.game.config.stageScale * p.length
+                          , W = -this.game.config.stageScale * 70 * .4
+                          , N = this.game.config.mouseEffectStrength
+                          , U = 1;
+                        p.forEach( (wt, St) => {
+                            let J = St / p.length - .5;
+                            this.game.particles.emit(1, this.position.x + r.x * W + l.x * J * Y, this.position.y + r.y * W + l.y * J * Y, {
+                                color: wt,
+                                velocity: {
+                                    x: c(this.game.config.minVelocity, this.game.config.maxVelocity) + this.game.config.screenSpeed.x * this.game.config.screenSpeedMagnitude * U + c(0, this.game.mouse.dx) * N,
+                                    y: c(this.game.config.minVelocity, this.game.config.maxVelocity) + this.game.config.screenSpeed.y * this.game.config.screenSpeedMagnitude * U + c(0, this.game.mouse.dy) * N
+                                },
+                                ease: {
+                                    ...this.game.config.ease,
+                                    velocity: "easeOutCubic"
+                                }
+                            })
+                        }
+                        )
+                    }
+                    draw(t) {}
+                }
+                  , rt = B;
+                var k = class {
+                    constructor(t) {
+                        this.game = t
+                    }
+                    update(t) {
+                        this.game.entities.forEach(e => e.update(t))
+                    }
+                    draw(t) {
+                        this.game.entities.forEach(e => e.draw(t))
+                    }
+                }
+                  , ht = k;
+                var q = class {
+                    constructor(t) {
+                        this.game = t,
+                        this.angle = 0,
+                        this.position = {
+                            x: 0,
+                            y: 0
+                        },
+                        this.cursor = {
+                            x: this.game.canvas.width / 2,
+                            y: this.game.canvas.height / 2
+                        },
+                        this.idle = 0
+                    }
+                    update(t) {
+                        if (this.position || (this.position = {
+                            ...this.cursor
+                        }),
+                        !this.lastPosition) {
+                            this.lastPosition = {
+                                ...this.position
+                            };
+                            return
+                        }
+                        let e = this.game.config.mouseEase
+                          , s = this.cursor.x - this.position.x
+                          , o = this.cursor.y - this.position.y
+                          , a = Math.sqrt(s * s + o * o);
+                        if (this.position.x += s * e,
+                        this.position.y += o * e,
+                        this.dx = this.position.x - this.lastPosition.x,
+                        this.dy = this.position.y - this.lastPosition.y,
+                        this.distance = Math.sqrt(this.dx * this.dx + this.dy * this.dy),
+                        this.distance > 1 ? this.idle = 0 : this.idle += t,
+                        a > 5) {
+                            let n = Math.atan2(s, -o) - Math.PI / 2;
+                            this.angle = et(this.angle, n, .1)
+                        }
+                        this.lastPosition.x += this.dx,
+                        this.lastPosition.y += this.dy
+                    }
+                    draw(t) {}
+                }
+                  , ct = q;
+                var G = class {
+                    constructor(t) {
+                        this.game = t,
+                        this.game.entities.add(this),
+                        this.stars = [];
+                        for (let e = 0; e < 100; e++)
+                            this.stars.push({
+                                x: c(-.5, .5),
+                                y: c(-.5, .32),
+                                z: c(-.5, .5)
+                            });
+                        this.velocity = {
+                            x: 0,
+                            y: 0,
+                            z: 0
+                        },
+                        this.offset = {
+                            x: 0,
+                            y: 0,
+                            z: 0
+                        },
+                        this.color = "white"
+                    }
+                    update(t) {
+                        let e = 2 / this.game.config.fps;
+                        this.velocity.x += (this.game.config.screenSpeed.x * this.game.config.screenSpeedMagnitude - this.velocity.x) * e,
+                        this.velocity.y += (this.game.config.screenSpeed.y * this.game.config.screenSpeedMagnitude - this.velocity.y) * e,
+                        this.offset.x += this.velocity.x / 1500 * t,
+                        this.offset.y += this.velocity.y / 1500 * t,
+                        this.offset.z += this.velocity.z * t
+                    }
+                    draw(t) {
+                        this.stars.forEach( ({x: e, y: s, z: o}) => {
+                            t.save();
+                            let a = st(S(o + this.offset.z, -.5, .5) + .5, 0, 1)
+                              , n = S(e + this.offset.x * (1 - a), -.5, .5) + .5
+                              , r = S(s + this.offset.y * (1 - a), -.5, .5) + .5
+                              , h = 1 - a
+                              , l = h * this.game.config.pixelScale * this.game.config.stageScale;
+                            t.globalAlpha = h,
+                            t.shadowBlur = 10,
+                            t.fillStyle = this.color,
+                            t.shadowColor = this.color,
+                            t.beginPath(),
+                            t.fillRect(n * t.canvas.width, r * t.canvas.height, l, l),
+                            t.restore()
+                        }
+                        )
+                    }
+                }
+                  , lt = G;
+                var mt = (i, t) => {
+                    Object.keys(i).forEach(e => {
+                        t[e] = i[e]
+                    }
+                    )
+                }
+                ;
+                var D = class {
+                    constructor(t, e, s) {
+                        this.parent = null,
+                        this.game = t,
+                        this.width = e,
+                        this.height = s,
+                        this.position = {
+                            x: 0,
+                            y: 0
+                        },
+                        this.velocity = {
+                            x: 0,
+                            y: 0
+                        },
+                        this.anchor = {
+                            x: 0,
+                            y: 0
+                        },
+                        this.scale = {
+                            x: 1,
+                            y: 1
+                        },
+                        this.rotation = 0,
+                        this.show(),
+                        this.enable(),
+                        this.setName("object")
+                    }
+                    setName(t) {
+                        this.name = t
+                    }
+                    show() {
+                        this.visible = !0
+                    }
+                    hide() {
+                        this.visible = !1
+                    }
+                    enable() {
+                        this.enabled = !0,
+                        this.visible = !0
+                    }
+                    disable() {
+                        this.enabled = !1,
+                        this.visible = !1
+                    }
+                    update(t) {
+                        !this.enabled || (this.position.x += this.velocity.x * t,
+                        this.position.y += this.velocity.y * t)
+                    }
+                    move(t, e) {
+                        this.position.x = t,
+                        this.position.y = e
+                    }
+                    rotate(t) {
+                        this.rotation = t
+                    }
+                    setAnchor(t, e) {
+                        this.anchor.x = t,
+                        this.anchor.y = e
+                    }
+                    setScale(t, e=t) {
+                        this.scale.x = t,
+                        this.scale.y = e
+                    }
+                    localToGlobal(t, e) {
+                        let s = {
+                            x: -this.anchor.x * this.width,
+                            y: -this.anchor.y * this.height
+                        }
+                          , o = this.game.config.stageScale
+                          , a = {
+                            x: (t + s.x) * this.scale.x,
+                            y: (e + s.y) * this.scale.y
+                        }
+                          , n = {
+                            x: this.position.x / o + a.x,
+                            y: this.position.y / o + a.y
+                        };
+                        return this.parent?.localToGlobal && (n = this.parent.localToGlobal(n.x, n.y)),
+                        n
+                    }
+                    drawSelf(t) {}
+                    drawDebug(t) {
+                        t.save(),
+                        t.strokeStyle = "red",
+                        t.strokeRect(0, 0, this.width, this.height),
+                        t.restore()
+                    }
+                    drawHitRect(t) {
+                        let e = this.getGlobalRect();
+                        t.save(),
+                        t.strokeStyle = "green",
+                        t.scale(this.game.config.stageScale, this.game.config.stageScale),
+                        t.strokeRect(e.x, e.y, e.width, e.height),
+                        t.restore()
+                    }
+                    draw(t) {
+                        !this.visible || (this.game.config.debug && this.drawHitRect(t),
+                        t.save(),
+                        t.imageSmoothingEnabled = !1,
+                        t.translate(this.position.x, this.position.y),
+                        t.rotate(this.rotation),
+                        t.scale(this.game.config.stageScale, this.game.config.stageScale),
+                        t.scale(this.scale.x, this.scale.y),
+                        t.translate(-this.anchor.x * this.width, -this.anchor.y * this.height),
+                        !this.game.config.debug && this.drawSelf(t),
+                        this.game.config.debug && this.drawDebug(t),
+                        t.restore())
+                    }
+                    getRect() {
+                        let {x: t, y: e} = this.position
+                          , {x: s, y: o} = this.scale
+                          , {x: a, y: n} = this.anchor
+                          , r = this.width * s
+                          , h = this.height * o;
+                        return {
+                            x: t - a * r,
+                            y: e - n * h,
+                            width: r,
+                            height: h
+                        }
+                    }
+                    getGlobalRect() {
+                        let {x: t, y: e} = this.localToGlobal(0, 0)
+                          , {x: s, y: o} = this.localToGlobal(this.width, this.height);
+                        return {
+                            x: t,
+                            y: e,
+                            width: s - t,
+                            height: o - e
+                        }
+                    }
+                    hitTest(t) {
+                        if (!this.visible || !t.visible)
+                            return !1;
+                        let e = this.getGlobalRect()
+                          , s = t.getGlobalRect();
+                        return e.x < s.x + s.width && e.x + e.width > s.x && e.y < s.y + s.height && e.height + e.y > s.y
+                    }
+                    destroy() {
+                        this.game.sprites.remove(this),
+                        this.parent && this.parent.remove(this)
+                    }
+                }
+                  , R = D;
+                var z = class extends R {
+                    constructor(t, e, s, o) {
+                        super(t, s, o),
+                        this.setImage(e)
+                    }
+                    setImage(t) {
+                        !t || (this.image = new Image,
+                        this.image.src = t)
+                    }
+                    drawSelf(t) {
+                        t.drawImage(this.image, 0, 0, this.width, this.height)
+                    }
+                }
+                  , f = z;
+                var v = class extends f {
+                    constructor(t) {
+                        super(t, "https://st.deviantart.net/artbit/topsecret/error/llama-part-base.png", 255, 253),
+                        this.setScale(.4, .4),
+                        this.setAnchor(.56, .7)
+                    }
+                    update(t) {
+                        this.move(this.game.mouse.position.x, this.game.mouse.position.y),
+                        this.rotate(this.game.mouse.angle + this.game.mouse.idle / 5)
+                    }
+                }
+                ;
+                var u = class extends R {
+                    constructor(t) {
+                        super(t, 0, 0),
+                        this.objects = []
+                    }
+                    add(t) {
+                        t.game = this.game,
+                        t.parent = this,
+                        this.objects.push(t)
+                    }
+                    remove(t) {
+                        this.objects = this.objects.filter(e => e != t)
+                    }
+                    update(t) {
+                        this.forEach(e => e.update(t))
+                    }
+                    draw(t) {
+                        t.save(),
+                        t.translate(this.position.x, this.position.y),
+                        t.rotate(this.rotation),
+                        t.scale(this.scale.x, this.scale.y),
+                        this.forEach(e => e.draw(t)),
+                        t.restore()
+                    }
+                    hitTest(t) {
+                        return this.objects.find(e => e.hitTest(t))
+                    }
+                    destroy() {
+                        this.forEach(t => t.destroy()),
+                        super.destroy()
+                    }
+                    forEach(t) {
+                        this.objects.forEach(t)
+                    }
+                }
+                  , pt = u;
+                var I = class extends pt {
+                    constructor(t) {
+                        super(t),
+                        this.shine = new f(t,"https://st.deviantart.net/artbit/topsecret/error/llama-part-highlight.png",118,118);
+                        let e = .4;
+                        this.shine.setScale(e, e),
+                        this.add(this.shine)
+                    }
+                    update(t) {
+                        this.shine.setAnchor(.5, .5);
+                        let e = this.game.config.stageScale;
+                        console.stat("scale", e),
+                        this.shine.move(9 * this.scale.x * e, -46 * this.scale.y * e),
+                        this.move(this.game.mouse.position.x, this.game.mouse.position.y),
+                        this.rotate(this.game.mouse.angle + this.game.mouse.idle / 5),
+                        this.shine.rotate(-this.rotation)
+                    }
+                }
+                ;
+                var b = class extends f {
+                    constructor(t, e, s={}) {
+                        super(t),
+                        this.type = e,
+                        this.setConfig(s)
+                    }
+                    setConfig({powerupImageSrc: t, powerupImageWidth: e, powerupImageHeight: s}) {
+                        this.setImage(t),
+                        this.width = e,
+                        this.height = s
+                    }
+                }
+                ;
+                var w = {
+                    rainbow: {
+                        powerupImageSrc: "https://st.deviantart.net/artbit/topsecret/error/heart.png",
+                        powerupImageWidth: 25,
+                        powerupImageHeight: 21,
+                        colors: ["#ff004d", "#ff4c00", "#fffb00", "#00ff38", "#009fff", "#9a00ff"],
+                        screenSpeedMagnitude: 90,
+                        trailEase: .15,
+                        minVelocity: -10,
+                        maxVelocity: 10,
+                        mouseEffectRadiusStart: 20,
+                        mouseEffectRadiusEnd: 50,
+                        mouseEffectStrength: 10,
+                        minLife: 120,
+                        maxLife: 150,
+                        mouseEase: .08,
+                        perspective: 60
+                    },
+                    smoke: {
+                        powerupImageSrc: "https://st.deviantart.net/artbit/topsecret/error/star.png",
+                        powerupImageWidth: 22,
+                        powerupImageHeight: 20,
+                        colors: ["#F33EB2", "#F49ACB", "#EF8088", "#D180F0", "#00E59B"],
+                        screenSpeedMagnitude: 120,
+                        trailEase: .05,
+                        minVelocity: -40,
+                        maxVelocity: 40,
+                        mouseEffectRadiusStart: 10,
+                        mouseEffectRadiusEnd: 40,
+                        mouseEffectStrength: 10,
+                        minLife: 70,
+                        maxLife: 150,
+                        mouseEase: .1,
+                        perspective: 100
+                    },
+                    llamaste: {
+                        powerupImageSrc: "https://st.deviantart.net/artbit/topsecret/error/heart.png",
+                        powerupImageWidth: 25,
+                        powerupImageHeight: 21,
+                        colors: ["#ff004d", "#ff4c00", "#fffb00", "#00ff38", "#009fff", "#9a00ff"],
+                        screenSpeedMagnitude: 90,
+                        trailEase: .06608695652173913,
+                        minVelocity: -2,
+                        maxVelocity: 2,
+                        mouseEffectStrength: 5,
+                        minLife: 100,
+                        maxLife: 100
+                    },
+                    trail: {
+                        powerupImageSrc: "https://st.deviantart.net/artbit/topsecret/error/star.png",
+                        powerupImageWidth: 22,
+                        powerupImageHeight: 20,
+                        colors: ["#F33EB2", "#F49ACB", "#EF8088", "#D180F0", "#00E59B"],
+                        screenSpeedMagnitude: 90,
+                        trailEase: .06608695652173913,
+                        minVelocity: -1,
+                        maxVelocity: 1,
+                        mouseEffectStrength: 5,
+                        minLife: 100,
+                        maxLife: 100
+                    }
+                }
+                  , ut = {
+                    debug: window?.location?.search?.includes("debug"),
+                    showControls: !1,
+                    fps: 120,
+                    scale: 2,
+                    stageScale: 2,
+                    pixelScale: 5,
+                    pixelScaleRange: [1, 10],
+                    trailEase: .1,
+                    trailEaseRange: [.001, .5],
+                    screenSpeedMagnitude: 100,
+                    screenSpeed: {
+                        x: -1,
+                        y: 0
+                    },
+                    screenSpeedRange: {
+                        x: [-1, 1],
+                        y: [-1, 1]
+                    },
+                    perspective: 1500,
+                    shadowBlur: 0,
+                    shadowBlurRange: [0, 10],
+                    minRadius: 1,
+                    minRadiusRange: [0, 2],
+                    maxRadius: 1,
+                    maxRadiusRange: [.1, 2],
+                    minVelocity: -5,
+                    minVelocityRange: [-100, 100],
+                    maxVelocity: 5,
+                    maxVelocityRange: [-100, 100],
+                    mouseEase: .06,
+                    mouseEffectRadiusStart: 30,
+                    mouseEffectRadiusStartRange: [1, 300],
+                    mouseEffectRadiusEnd: 100,
+                    mouseEffectRadiusEndRange: [1, 300],
+                    mouseEffectStrength: 10,
+                    mouseEffectStrengthRange: [0, 20],
+                    ease: {
+                        velocity: "trailVelocity",
+                        fade: "easeOutCubic",
+                        radius: "easeOutQuad"
+                    },
+                    minLife: 110,
+                    minLifeRange: [1, 200],
+                    maxLife: 150,
+                    maxLifeRange: [1, 200],
+                    colors: ["#F33EB2", "#F49ACB", "#EF8088", "#D180F0", "#00E59B"],
+                    ...w.smoke
+                };
+                var _ = class {
+                    constructor(t) {
+                        this.game = t,
+                        this.game.entities.add(this),
+                        this.powerupTypes = ["rainbow", "smoke"];
+                        let e = new u(this.game)
+                          , s = this.powerupTypes[0]
+                          , o = new b(this.game,s,w[s]);
+                        o.move(400, 100),
+                        o.velocity.x = -100,
+                        e.add(o),
+                        this.powerup = o,
+                        this.game.entities.add(e),
+                        this.llama = new v(this.game),
+                        this.game.entities.add(this.llama),
+                        this.helmet = new I(this.game),
+                        this.game.entities.add(this.helmet)
+                    }
+                    update(t) {
+                        if (!!this.game.mouse.cursor && !!this.powerup) {
+                            if (this.powerup.hitTest(this.llama)) {
+                                let e = this.powerup.type;
+                                mt(w[e], this.game.config);
+                                let o = (this.powerupTypes.findIndex(Q => Q === e) + 1) % this.powerupTypes.length
+                                  , a = this.powerupTypes[o];
+                                this.powerup.type = a,
+                                this.powerup.setConfig(w[a]),
+                                this.game.config.screenSpeed.x = Math.cos(this.game.mouse.angle + Math.PI),
+                                this.game.config.screenSpeed.y = Math.sin(this.game.mouse.angle + Math.PI),
+                                this.game.config.showControls && this.game.controls.update();
+                                let {x: n, y: r} = this.powerup.localToGlobal(this.powerup.width / 2, this.powerup.height / 2)
+                                  , h = this.game.config.stageScale
+                                  , l = 200
+                                  , p = 50;
+                                for (; p-- > 0; )
+                                    this.game.particles.emit(1, n * h, r * h, {
+                                        color: tt(this.game.config.colors),
+                                        minVelocity: c(-l, -l / 2),
+                                        maxVelocity: c(l / 2, l),
+                                        ease: {
+                                            velocity: "explosion"
+                                        }
+                                    });
+                                this.powerup.move(-100, -100)
+                            }
+                            if (this.powerup.position.x < -50) {
+                                let e = this.game.ctx.canvas;
+                                this.powerup.move(e.width + 100, c(.2 * e.height, .8 * e.height))
+                            }
+                        }
+                    }
+                    draw(t) {}
+                }
+                  , dt = _;
+                var X = class {
+                    constructor(t, e) {
+                        this.game = t,
+                        this.canvas = e,
+                        this.game.ctx = this.ctx = e.getContext("2d")
+                    }
+                    update() {
+                        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height),
+                        this.ctx.save(),
+                        this.game.entities.forEach(t => {
+                            t.draw(this.ctx)
+                        }
+                        ),
+                        this.ctx.restore()
+                    }
+                }
+                  , ft = X;
+                var j = class {
+                    constructor(t) {
+                        let e = t.config;
+                        this.gui = new Tweakpane.Pane;
+                        let s = this.gui.addFolder({
+                            title: "Global"
+                        });
+                        s.addButton({
+                            title: "Import..."
+                        }).on("click", () => {
+                            let a = window.prompt("Paste your config here");
+                            this.gui.importPreset(JSON.parse(a))
+                        }
+                        ),
+                        s.addButton({
+                            title: "Export..."
+                        }).on("click", () => {
+                            let a = window.prompt("Copy your config", JSON.stringify(this.gui.exportPreset()))
+                        }
+                        ),
+                        s.addInput(e, "pixelScale", {
+                            min: e.pixelScaleRange[0],
+                            max: e.pixelScaleRange[1]
+                        }),
+                        s.addInput(e, "screenSpeed", {
+                            x: {
+                                min: e.screenSpeedRange.x[0],
+                                max: e.screenSpeedRange.x[1]
+                            },
+                            y: {
+                                min: e.screenSpeedRange.y[0],
+                                may: e.screenSpeedRange.y[1]
+                            }
+                        }),
+                        s.addInput(e, "shadowBlur", {
+                            min: e.shadowBlurRange[0],
+                            max: e.shadowBlurRange[1]
+                        }),
+                        s.addInput(e, "debug");
+                        let o = this.gui.addFolder({
+                            title: "Particles"
+                        });
+                        o.addInput(e, "trailEase", {
+                            min: e.trailEaseRange[0],
+                            max: e.trailEaseRange[1]
+                        }),
+                        o.addInput(e, "minRadius", {
+                            min: e.minRadiusRange[0],
+                            max: e.minRadiusRange[1]
+                        }),
+                        o.addInput(e, "maxRadius", {
+                            min: e.maxRadiusRange[0],
+                            max: e.maxRadiusRange[1]
+                        }),
+                        o.addInput(e, "minVelocity", {
+                            min: e.minVelocityRange[0],
+                            max: e.minVelocityRange[1]
+                        }),
+                        o.addInput(e, "maxVelocity", {
+                            min: e.maxVelocityRange[0],
+                            max: e.maxVelocityRange[1]
+                        }),
+                        o.addInput(e, "mouseEffectRadiusStart", {
+                            min: e.mouseEffectRadiusStartRange[0],
+                            max: e.mouseEffectRadiusStartRange[1]
+                        }),
+                        o.addInput(e, "mouseEffectRadiusEnd", {
+                            min: e.mouseEffectRadiusEndRange[0],
+                            max: e.mouseEffectRadiusEndRange[1]
+                        }),
+                        o.addInput(e, "mouseEffectStrength", {
+                            min: e.mouseEffectStrengthRange[0],
+                            max: e.mouseEffectStrengthRange[1]
+                        }),
+                        o.addInput(e, "minLife", {
+                            min: e.minLifeRange[0],
+                            max: e.minLifeRange[1]
+                        }),
+                        o.addInput(e, "maxLife", {
+                            min: e.maxLifeRange[0],
+                            max: e.maxLifeRange[1]
+                        })
+                    }
+                    update() {
+                        this.gui.refresh()
+                    }
+                }
+                  , gt = j;
+                var M = class {
+                    constructor() {
+                        this.events = {}
+                    }
+                    on(t, e) {
+                        t.split(" ").forEach(s => {
+                            this.events[s] = this.events[s] || [],
+                            this.events[s].push(e)
+                        }
+                        )
+                    }
+                    off(t, e) {
+                        t.split(" ").forEach(s => {
+                            this.events[s] = (this.events[s] || []).filter(o => o != e)
+                        }
+                        )
+                    }
+                    emit(t, ...e) {
+                        (this.events[t] || []).forEach(o => o(...e))
+                    }
+                }
+                ;
+                var C = class {
+                    constructor(t={}) {
+                        this.systems = {},
+                        this.isRunning = !1,
+                        this.events = new M,
+                        this.config = {
+                            ...t
+                        },
+                        this.entities = new u(this),
+                        this.fps = t.fps || 60,
+                        this.timeStamp = 0,
+                        this.frame = 0,
+                        window.game = this
+                    }
+                    addSystem(t, e="default") {
+                        return this.systems[e] || (this.systems[e] = []),
+                        this.systems[e].push(t),
+                        t
+                    }
+                    updateGroup(t, e) {
+                        this.systems[t].forEach(s => s.update(e))
+                    }
+                    update(t) {
+                        this.updateGroup("default", t)
+                    }
+                    draw(t) {
+                        this.updateGroup("renderer", t),
+                        this.frame++
+                    }
+                    requestAnimationFrame(t) {
+                        this.requestId && (cancelAnimationFrame(this.requestId),
+                        this.requestId = null),
+                        this.requestId = requestAnimationFrame(t)
+                    }
+                    start() {
+                        if (this.isRunning)
+                            return;
+                        this.isRunning = !0;
+                        let t = 1e3 / this.fps, e = t / 1e3, s, o, a = r => {
+                            if (!this.isRunning)
+                                return;
+                            let h = r - o;
+                            if (h < t) {
+                                this.requestAnimationFrame(a);
+                                return
+                            }
+                            s += h,
+                            o = r;
+                            let l = 0;
+                            for (; s >= t; )
+                                if (this.update(e),
+                                s -= t,
+                                ++l >= 5) {
+                                    console.warn("Game update loop ran too many times.");
+                                    break
+                                }
+                            this.draw(r),
+                            this.requestAnimationFrame(a)
+                        }
+                        , n = r => {
+                            o = r,
+                            s = 0,
+                            this.requestAnimationFrame(a)
+                        }
+                        ;
+                        this.requestAnimationFrame(n)
+                    }
+                    stop() {
+                        this.isRunning = !1
+                    }
+                }
+                ;
+                var H = class {
+                    constructor(t) {
+                        this.canvas = t,
+                        this.game = new C(ut),
+                        this.game.canvas = t,
+                        this.game.mouse = this.game.addSystem(new ct(this.game)),
+                        this.game.particles = this.game.addSystem(new nt(this.game)),
+                        this.game.addSystem(new rt(this.game)),
+                        this.game.addSystem(new ht(this.game)),
+                        this.game.addSystem(new lt(this.game)),
+                        this.game.addSystem(new dt(this.game)),
+                        this.game.addSystem(new ft(this.game,t), "renderer"),
+                        this.game.config.showControls && (this.game.controls = new gt(this.game)),
+                        this.init()
+                    }
+                    init() {
+                        g(this.canvas, "pointermove", t => {
+                            let {x: e, y: s} = K(this.canvas, t);
+                            this.game.mouse.cursor.x = e,
+                            this.game.mouse.cursor.y = s
+                        }
+                        ),
+                        g(document, "visibilitychange", t => {
+                            document.hidden ? this.stop() : this.start()
+                        }
+                        )
+                    }
+                    start() {
+                        this.game.start(),
+                        console.log("start")
+                    }
+                    stop() {
+                        this.game.stop(),
+                        console.log("stop")
+                    }
+                }
+                  , yt = H;
+                var m = {};
+                console.stat = (i, t) => (m[i] || (m[i] = {
+                    min: 1 / 0,
+                    max: -1 / 0,
+                    avg: 0,
+                    count: 0
+                }),
+                t !== void 0 && (m[i].count++,
+                m[i].min = Math.min(m[i].min, t),
+                m[i].max = Math.max(m[i].max, t),
+                m[i].avg = (m[i].avg + t) / m[i].count),
+                m[i]);
+                function bt(i) {
+                    let t = new yt(i)
+                      , e = t.game.config
+                      , s = i.width
+                      , o = i.height
+                      , a = () => {
+                        i.width = Math.floor(window.innerWidth / e.scale),
+                        i.height = Math.floor(window.innerHeight / e.scale),
+                        i.style.width = window.innerWidth + "px",
+                        i.style.height = window.innerHeight + "px",
+                        e.stageScale = (i.height / o + i.width / s) / 2,
+                        console.log("stageScale", e.stageScale)
+                    }
+                    ;
+                    g(window, "resize", a),
+                    a(),
+                    t.start()
+                }
+                var xt = bt;
+                window.initLlamaste = xt;
+            }
+            )();
+
+            initLlamaste(document.querySelector('#stage'));
+        </script>
+        <!-- da-user-profile:ga:50272db371084183480129a90f194b1f62d1187fda289872cfa0a380 -->
+    </body>
+</html>
